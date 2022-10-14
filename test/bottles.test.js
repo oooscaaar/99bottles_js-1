@@ -21,8 +21,7 @@ describe('Bottles', () => {
 
   test('verse 1', () => {
     const expected =
-      `1 bottle of beer on the wall, 1 bottle of beer. Take it down and pass it around, no more bottles of beer on the wall.
-`;
+      `1 bottle of beer on the wall, 1 bottle of beer. Take it down and pass it around, no more bottles of beer on the wall.`;
     expect(new Bottles().verse(1)).toBe(expected);
   });
 
