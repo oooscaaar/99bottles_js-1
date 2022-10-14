@@ -25,11 +25,9 @@ describe('Bottles', () => {
     expect(new Bottles().verse(1)).toBe(expected);
   });
 
-  test.skip('verse 0', () => {
+  test('verse 0', () => {
     const expected =
-      `No more bottles of beer on the wall, no more bottles of beer.
-Go to the store and buy some more, 99 bottles of beer on the wall.
-`;
+      `No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.`;
     expect(new Bottles().verse(0)).toBe(expected);
   });
 
