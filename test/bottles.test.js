@@ -9,7 +9,7 @@ Take one down and pass it around, 98 bottles of beer on the wall.
     expect(new Bottles().verse(99)).toBe(expected);
   });
 
-  test.skip('another verse', () => {
+  test('another verse', () => {
     const expected =
       `89 bottles of beer on the wall, 89 bottles of beer.
 Take one down and pass it around, 88 bottles of beer on the wall.
