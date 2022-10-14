@@ -3,47 +3,47 @@ import { Bottles } from '../lib/bottles';
 describe('Bottles', () => {
   test('the first verse', () => {
     const expected =
-`99 bottles of beer on the wall, 99 bottles of beer.
+      `99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 `;
     expect(new Bottles().verse(99)).toBe(expected);
   });
 
-  test('another verse', () => {
+  test.skip('another verse', () => {
     const expected =
-`89 bottles of beer on the wall, 89 bottles of beer.
+      `89 bottles of beer on the wall, 89 bottles of beer.
 Take one down and pass it around, 88 bottles of beer on the wall.
 `;
     expect(new Bottles().verse(89)).toBe(expected);
   });
 
-  test('verse 2', () => {
+  test.skip('verse 2', () => {
     const expected =
-`2 bottles of beer on the wall, 2 bottles of beer.
+      `2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
 `;
     expect(new Bottles().verse(2)).toBe(expected);
   });
 
-  test('verse 1', () => {
+  test.skip('verse 1', () => {
     const expected =
-`1 bottle of beer on the wall, 1 bottle of beer.
+      `1 bottle of beer on the wall, 1 bottle of beer.
 Take it down and pass it around, no more bottles of beer on the wall.
 `;
     expect(new Bottles().verse(1)).toBe(expected);
   });
 
-  test('verse 0', () => {
+  test.skip('verse 0', () => {
     const expected =
-`No more bottles of beer on the wall, no more bottles of beer.
+      `No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 `;
     expect(new Bottles().verse(0)).toBe(expected);
   });
 
-  test('a couple verses', () => {
+  test.skip('a couple verses', () => {
     const expected =
-`99 bottles of beer on the wall, 99 bottles of beer.
+      `99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer.
@@ -54,7 +54,7 @@ Take one down and pass it around, 97 bottles of beer on the wall.
 
   test('a few verses', () => {
     const expected =
-`2 bottles of beer on the wall, 2 bottles of beer.
+      `2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
 
 1 bottle of beer on the wall, 1 bottle of beer.
@@ -66,9 +66,9 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
     expect(new Bottles().verses(2, 0)).toBe(expected);
   });
 
-  test('the whole song', () => {
+  test.skip('the whole song', () => {
     const expected =
-`99 bottles of beer on the wall, 99 bottles of beer.
+      `99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer.
