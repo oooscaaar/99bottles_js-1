@@ -17,7 +17,7 @@ Take one down and pass it around, 88 bottles of beer on the wall.
     expect(new Bottles().verse(89)).toBe(expected);
   });
 
-  test.skip('verse 2', () => {
+  test('verse 2', () => {
     const expected =
       `2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
